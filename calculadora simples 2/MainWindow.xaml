@@ -1,0 +1,36 @@
+﻿<Window x:Class="calculadora_simples_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calculadora_simples_2"
+        mc:Ignorable="d"
+        Title="Calculadora simples" Height="350" Width="525">
+    <Grid RenderTransformOrigin="0.419,0.5" Margin="0,0,2,-1">
+        <Button Name="btnsomar"
+                Content=" + "
+                Click="btnsomar_click" Margin="71,112,393,166"
+                RenderTransformOrigin="1.843,1.202"
+                 />
+        <Button Name="btnsubtrair"
+                Content=" - "
+                Click="btnsubtrair_click" Margin="153,112,311,166" RenderTransformOrigin="1.843,1.202"
+                 />
+        <Button Name="btnlimpar"
+                Content=" LIMPAR "
+                Click="btnlimpar_click" Margin="240,159,224,119" RenderTransformOrigin="1.843,1.202"
+                 />
+        <Button Name="btndividir"
+                Content=" / "
+                Click="btndividir_click" Margin="408,112,56,166" RenderTransformOrigin="1.843,1.202"
+                 />
+        <Button Name="btnmultiplica"
+                Content=" * "
+                Click="btnmultiplica_click" Margin="318,112,146,166" RenderTransformOrigin="1.843,1.202"
+                 />
+        <TextBlock Text="digite o primero número" Margin="71,27,311,270" />
+        <TextBox Name="txtNumero1" Margin="71,63,311,221" RenderTransformOrigin="0.179,-4.88" />
+        <TextBlock Text="digite o segundo numero" Margin="318,22,54,270"/>
+        <TextBox Name="txtNumero2" Margin="326,63,56,221" RenderTransformOrigin="0.179,-4.88" />
+    </Grid>
+</Window>
